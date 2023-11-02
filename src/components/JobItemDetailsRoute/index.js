@@ -177,18 +177,21 @@ class JobItemDetailsRoute extends Component {
           </div>
           <p>{jobDescription}</p>
           <h1 className="job-details-heading">Skills</h1>
-          <ul className="skills-ul-container">
+          <div className="skills-ul-container">
             {skillsList.map(eachSkillItem => (
-              <li key={eachSkillItem.name} className="skills-list-container">
+              <div
+                key={eachSkillItem.name}
+                className="skills-list-container mr-2 p-3"
+              >
                 <img
                   className="skills-logo"
                   src={eachSkillItem.imageUrl}
                   alt={eachSkillItem.name}
                 />
                 <p className="skills-title">{eachSkillItem.name}</p>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
           <h1 className="job-details-heading">Life at Company</h1>
           <div className="job-details-row-container">
             <p className="company-life-description">{description}</p>

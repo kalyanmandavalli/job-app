@@ -1,4 +1,5 @@
 .job-details-container {
+  min-width: 40rem;
   min-height: 100vh;
   background-color: black;
   padding-bottom: 30px;
@@ -77,16 +78,23 @@
   margin-left: 8px;
 }
 .skills-ul-container {
+  width: 100%;
   padding-left: 0px;
   display: flex;
   flex-wrap: wrap;
 }
 .skills-list-container {
   list-style-type: none;
-  width: 30%;
-  padding-right: 20px;
+  width: 50%;
+  padding-right: 60px;
   margin-bottom: 50px;
   display: flex;
+}
+
+@media all and (min-width: 700px) {
+  .skills-list-container {
+    width: 30%;
+  }
 }
 .skills-logo {
   margin-right: 20px;

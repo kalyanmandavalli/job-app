@@ -12,9 +12,9 @@ body {
 }
 
 .main-app-container {
-  width: 40%;
+  width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .main-app-container {
     width: 100%;
   }
